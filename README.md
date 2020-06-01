@@ -1,6 +1,6 @@
 # Screaming-Coffee-Machine
 
-![alt text](https://https://github.com/bobig6/Screaming-Coffee-Machine/blob/master/VideoAndPhotos/coffee.png?raw=true)
+![alt text](https://github.com/bobig6/Screaming-Coffee-Machine/blob/master/VideoAndPhotos/coffee.png?raw=true)
 
 Проектът ни е кафемашина, която в посочен от теб час, ти приготвя кафе и те събужда със звуков сигнал
 
