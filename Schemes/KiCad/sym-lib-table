@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Cofee_Machine-rescue)(type Legacy)(uri ${KIPRJMOD}/Cofee_Machine-rescue.lib)(options "")(descr ""))
+  (lib (name arduino-rescue)(type Legacy)(uri ${KIPRJMOD}/arduino-rescue.lib)(options "")(descr ""))
+)

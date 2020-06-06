@@ -1,0 +1,116 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_WallPlug_Earth
+#
+DEF Connector_Conn_WallPlug_Earth P 0 0 Y Y 1 F N
+F0 "P" 0 150 50 H V C BNN
+F1 "Connector_Conn_WallPlug_Earth" -200 0 50 V V C BNN
+F2 "" 400 0 50 H I C CNN
+F3 "" 400 0 50 H I C CNN
+DRAW
+A -125 0 150 -899 899 0 1 10 f -125 -150 -125 150
+C 100 -300 14 0 1 0 F
+P 2 0 1 20 -175 -100 -25 -100 N
+P 2 0 1 20 -175 0 20 0 N
+P 2 0 1 20 -175 100 -25 100 N
+P 2 0 1 10 -125 -150 -125 150 N
+P 2 0 1 0 -25 -100 100 -100 N
+P 2 0 1 0 -25 100 100 100 N
+P 2 0 1 8 60 -370 140 -370 N
+P 2 0 1 8 70 -390 130 -390 N
+P 2 0 1 8 80 -410 120 -410 N
+P 2 0 1 8 90 -430 110 -430 N
+P 2 0 1 8 100 -300 100 -350 N
+P 2 0 1 8 150 -350 50 -350 N
+P 4 0 1 0 100 -300 75 -300 75 0 -175 0 N
+X AC_P 1 300 100 200 L 50 50 1 1 w
+X AC_N 2 300 -100 200 L 50 50 1 1 w
+X EARTH 3 300 -300 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_SPST
+#
+DEF Switch_SW_SPST SW 0 0 Y N 1 F N
+F0 "SW" 0 125 50 H V C CNN
+F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+P 2 0 0 0 -60 10 60 70 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X B 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# coffee_machine_examples_Heater
+#
+DEF coffee_machine_examples_Heater U 0 40 Y Y 1 F N
+F0 "U" 0 -50 50 H V C CNN
+F1 "coffee_machine_examples_Heater" 0 50 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+S -350 350 350 -350 0 1 0 N
+S 200 -450 200 -450 0 1 0 N
+S 350 250 350 100 0 1 0 N
+X GND ~ -50 -450 100 U 50 50 1 1 I
+X Pin1 ~ -450 150 100 R 50 50 1 1 I
+X Pin2 ~ -450 -150 100 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# coffee_machine_examples_Pump
+#
+DEF coffee_machine_examples_Pump U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "coffee_machine_examples_Pump" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 250 300 -250 0 1 0 N
+X Pin1 ~ -400 100 100 R 50 50 1 1 I
+X Pin2 ~ -400 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
